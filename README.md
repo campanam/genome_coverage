@@ -6,7 +6,7 @@ Script to calculate genome sequencing coverage (mean +- standard deviation) from
 ### Installation  
 Enter the commands:  
 `git clone https://github.com/campanam/genome_coverage/`  
-`chmod +x genome_coverage.rb`
+`chmod +x genome_coverage.rb`  
 `[sudo] mv genome_coverage.rb [DESTINATION]`  
 
 ### Execution  
