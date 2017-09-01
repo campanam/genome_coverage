@@ -1,5 +1,5 @@
 # genome_coverage
-## Michael G. Campana, 2017  
+## Michael G. Campana, 2015  
 
 Script to calculate genome sequencing coverage (mean +- standard deviation) from a BEDGRAPH (bga). Outputs a coverage histogram so that highly covered areas can be identified.  
 
