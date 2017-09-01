@@ -3,6 +3,9 @@
 
 Script to calculate genome sequencing coverage (mean +- standard deviation) from a BEDGRAPH (bga). Outputs a coverage histogram so that highly covered areas can be identified.  
 
+### License  
+The software is made available under the Smithsonian Institution [terms of use](https://wwww.si.edu/termsofuse).  
+
 ### Installation  
 Enter the commands:  
 `git clone https://github.com/campanam/genome_coverage/`  
