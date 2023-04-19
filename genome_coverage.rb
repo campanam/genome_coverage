@@ -1,8 +1,8 @@
 #!/usr/bin/ruby
 
 #-----------------------------------------------------------------------------------------------
-# genome_coverage
-# Michael G. Campana, 2015
+# genome_coverage v0.2.0
+# Michael G. Campana, 2015-2023
 # Smithsonian Conservation Biology Institute
 #-----------------------------------------------------------------------------------------------
 
@@ -35,14 +35,22 @@ def stdev(val = [])
 end
 #-------------------------------------------------
 begin
-    print "File name?\n"
-    filename = gets.chomp
+	if ARGV[0].nil?
+    	print "File name?\n"
+    	filename = gets.chomp
+    else
+    	filename = ARGV[0]
+    end
     while !FileTest.exist?(filename)
         print "File not found. Re-enter.\n"
         filename = gets.chomp
     end
-    print "Enter output histogram name.\n"
-    outname = gets.chomp
+    if ARGV[1].nil?
+    	print "Enter output histogram name.\n"
+    	outname = gets.chomp
+    else
+    	outname = ARGV[1]
+    end
     histogram = [0]
     linecount = 0
     counter = 0
@@ -74,7 +82,7 @@ begin
             if counter == 1000000
                 counter = 0
                 linecount += 1000000
-                print "Processed " + linecount.to_s + " lines.\n"
+                $STDERR.puts "Processed " + linecount.to_s + " lines.\n"
             end
         end
     end
