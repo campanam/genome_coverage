@@ -90,7 +90,7 @@ begin
     for i in 0...histogram.size
         out += i.to_s + "\t" + histogram[i].to_s + "\n"
     end
-    print "Mean: " + mean(histogram).to_s + "\tStDev: "  +  stdev(histogram).to_s
+    puts "Mean: " + mean(histogram).to_s + "\tStDev: "  +  stdev(histogram).to_s
     File.open(outname, 'w') do |f2|
         f2.puts out
     end
