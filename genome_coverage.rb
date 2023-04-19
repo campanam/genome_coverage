@@ -82,7 +82,7 @@ begin
             if counter == 1000000
                 counter = 0
                 linecount += 1000000
-                $STDERR.puts "Processed " + linecount.to_s + " lines.\n"
+                $stderr.puts "Processed " + linecount.to_s + " lines.\n"
             end
         end
     end
